@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Crazy Asian Poker</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Crazy Asian Poker</a>
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="/index">Home Page</a>
+                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link active" href="/help">Help</a>
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Table of Contents -->
+            <div class="mt-4">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#game-design">Game Design</a></li>
+                    <li><a href="#board-configurations">Board Configurations</a></li>
+                    <li><a href="#extra-cards">Extra Cards</a></li>
+                    <li><a href="#payout-types">Payout Types</a></li>
+                    <li><a href="#showdown-types">Showdown Types</a></li>
+                    <li><a href="#point-types">Point Types</a></li>
+                </ul>
+            </div>
+
+            <!-- Game Design Section -->
+            <div id="game-design" class="mt-5">
+                <h2>Game Design</h2>
+                <p>
+                    There are many different games played in CAP. Players are encouraged to innovate.<br>
+                    When designing new games, the following principles generally apply:
+                </p>
+                <ul>
+                    <li>Must be playable with a single complete 52 card deck.</li>
+                    <li>Games you can play online are not allowed.</li>
+                    <li>Encourages action. This can be achieved by keeping equities close, and encouraging betting.</li>
+                    <li>Try not to make things too complicated.</li>
+                </ul>
+                <p>
+                    It is often an objective to use as many cards from the deck as possible.<br>
+                    This is usually achieved by dealing out as many hold cards preflop as the deck and game structure will allow.
+                </p>
+                <p><a href="#top">Back to Top</a></p>
+            </div>
+
+            <!-- Board Configurations Section -->
+            <div id="board-configurations" class="mt-5">
+                <h2>Board Configurations</h2>
+                <p>
+                    There are many board configurations used in CAP. The most common are:
+                </p>
+                <ul>
+                    <li>Single Board</li>
+                    <li>Double Board</li>
+                    <li>Triple Board</li>
+                    <li>Double Bullseye</li>
+                    <li>Bomba</li>
+                    <li>Countdown</li>
+                    <li>Wheel</li>
+                    <li>Pandemic</li>
+                    <li>Social Distancing</li>
+                </ul>
+                <p>
+                    Players are encouraged to invent new configurations to try.
+                </p>
+                <p><a href="#top">Back to Top</a></p>
+            </div>
+
+            <!-- Extra Cards Section -->
+            <div id="extra-cards" class="mt-5">
+                <h2>Extra Cards</h2>
+                <p>
+                    A number of Extra Card options have been used in CAP. ESG with catchup is generally the default.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>ESG</td>
+                        <td>
+                            ESG refers to the recycling of discards. When the number of cards in the discard pile is greater than or equal to the number of players remaining in the hand, players receive one extra hold card for the next street.
+                            In some cases, cards that will be undealt after the river are added to the discard pile to increase the likelihood of ESG.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Catchup ESG</td>
+                        <td>Similar to ESG, however if ESG is missed on a street it is “caught up” on the first future street where there are sufficient discard cards.</td>
+                    </tr>
+                    <tr>
+                        <td>Christmas</td>
+                        <td>When the number of cards remaining in the deck is greater than or equal to the number of board cards still required to be dealt plus the number of players remaining in the hand, players receive one extra hold card for the next street.</td>
+                    </tr>
+                    <tr>
+                        <td>Grinch</td>
+                        <td>The player taking the last aggressive action decides whether or not there will be a Christmas on the next street.</td>
+                    </tr>
+                    <tr>
+                        <td>Pass the Trash</td>
+                        <td>
+                            Players select a specified number of cards from their hand, and pass these to another player specified.<br>
+                            This may happen just pre-flop, or also post-flop.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Draw</td>
+                        <td>Players can choose to discard any number of cards from their hand, and draw the same number of cards from the deck.</td>
+                    </tr>
+                    <tr>
+                        <td>Discard</td>
+                        <td>Players must discard a set number of cards from their hand. This may happen just pre-flop, or also post-flop.</td>
+                    </tr>
+                </table>
+                <p><a href="#top">Back to Top</a></p>
+            </div>
+
+            <!-- Payout Types Section -->
+            <div id="payout-types" class="mt-5">
+                <h2>Payout Types</h2>
+                <p>Games usually consist of multiple components. There are two main ways to determine payouts based on the component results:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Payout Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Split pot</td>
+                        <td>The pot is split evenly between the winners of the individual components.</td>
+                    </tr>
+                    <tr>
+                        <td>Points</td>
+                        <td>Each component has a given number of points, and the player with the most points wins the pot.<br>If multiple players have the same number of points the pot is chopped.</td>
+                    </tr>
+                </table>
+                <p><a href="#top">Back to Top</a></p>
+            </div>
+
+            <!-- Showdown Types Section -->
+            <div id="showdown-types" class="mt-5">
+                <h2>Showdown Types</h2>
+                <p>There are three showdown types used in CAP:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Showdown Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Omaha-style</td>
+                        <td>Must use two hold cards and three board cards.</td>
+                    </tr>
+                    <tr>
+                        <td>Make-5</td>
+                        <td>Must use all cards on a board and enough hold cards to make a five-card hand.</td>
+                    </tr>
+                    <tr>
+                        <td>Hold’em style</td>
+                        <td>Can use any number of hold cards and board cards. This is the least common showdown type in CAP.</td>
+                    </tr>
+                </table>
+                <p><a href="#top">Back to Top</a></p>
+            </div>
+
+            <!-- Point Types Section -->
+            <div id="point-types" class="mt-5">
+                <h2>Point Types</h2>
+                <p>Points can be divided along two dimensions – board point vs hand point, and high point vs low point. It is much more common for hand points to be high points than low points.</p>
+                <ul>
+                    <li>
+                        <h4>Board Points</h4>
+                        <p>These are points made using the specified board cards. Any of the showdown types might apply.</p>
+                    </li>
+                    <li>
+                        <h4>Hand Points</h4>
+                        <p>These are points made using the players' hold cards. These are usually, but not always, five-card hands.</p>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li>
+                        <h4>High Points</h4>
+                        <p>These points are awarded to the best traditional high hand, either on a board or in the player’s hand. In some games, notably allocation games, a point is awarded to the best high hand using less than five cards. Straights and flushes may or may not be allowed.</p>
+                    </li>
+                    <li>
+                        <h4>Low Points</h4>
+                        <p>These points are awarded to the best low hand, either on a board or in the player’s hand. There are a number of ways in which the best low hand can be determined:</p>
+                    </li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Low Type</th>
+                            <th>Qualifier</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Traditional</td>
+                        <td>Eight or better</td>
+                        <td>Ace is the lowest card, straights and flushes do not matter.</td>
+                    </tr>
+                    <tr>
+                        <td>7-2 low</td>
+                        <td>None</td>
+                        <td>Ace plays high. Straights and flushes impact hand rankings. Hand ranking is the reverse of standard high hand ranking.</td>
+                    </tr>
+                    <tr>
+                        <td>6-2 low</td>
+                        <td>None</td>
+                        <td>Ace plays high. Straights and flushes do not matter.</td>
+                    </tr>
+                    <tr>
+                        <td>Badugi</td>
+                        <td>None</td>
+                        <td>Uses up to four cards. This low can use at most one card from each suit and one card of each rank.</td>
+                    </tr>
+                </table>
+                <p><a href="#top">Back to Top</a></p>
+            </div>
+        </div>
+    </body>
+</html>
